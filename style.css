@@ -1,0 +1,157 @@
+/* Shared Styles for DevOps Portfolio */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    color: #222;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0078d7;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 60px;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.navbar .logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 32px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline-block;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.navbar ul li a.active, .navbar ul li a:hover {
+    background: #005fa3;
+}
+.container {
+    max-width: 900px;
+    margin: 80px auto 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 32px;
+}
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0078d7;
+    margin-bottom: 16px;
+}
+.btn {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 16px;
+}
+.btn:hover {
+    background: #005fa3;
+}
+.section-title {
+    font-size: 1.5rem;
+    color: #0078d7;
+    margin-bottom: 16px;
+}
+.card {
+    background: #e3eafc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(0,120,215,0.08);
+}
+.timeline {
+    border-left: 3px solid #0078d7;
+    padding-left: 24px;
+    margin-left: 10px;
+}
+.timeline-item {
+    margin-bottom: 24px;
+}
+.timeline-date {
+    color: #0078d7;
+    font-weight: 500;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.contact-info a {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-form {
+    background: #e3eafc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 6px rgba(0,120,215,0.08);
+    max-width: 400px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.contact-form button {
+    width: 100%;
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 12px;
+    }
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
